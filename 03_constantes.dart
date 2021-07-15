@@ -10,4 +10,16 @@ main() {
   final double area = PI * (raio * raio);
 
   print('O valor da área é: ' + area.toString());
+
+  final lista_mod = ['Ana', 'Zé'];
+  final lista = const ['Ana', 'Zé'];
+  var lista_mod2 = const ['Ana', 'Zé'];
+  const un_list = ['ué'];
+
+  lista_mod.add('João');
+  lista_mod2 = ['Ah'];
+  print(lista);
+  print(lista_mod);
+  print(lista_mod2);
+  print(un_list);
 }
