@@ -1,3 +1,5 @@
+import 'dart:io';
+
 main() {
   double a = 7;
   int b = 3;
@@ -36,4 +38,15 @@ main() {
   print(c);
   print(!false);
   print(!true);
+
+  print('Está chovendo? (s/N)');
+  String resposta = stdin.readLineSync()!;
+  bool estaChovendo = resposta == 's';
+  print(estaChovendo ? 'Slc' : 'Ah baum');
+
+  // OU
+  print('Está frio? (s/N)');
+  String resposta2 = stdin.readLineSync()!;
+  bool estaFrio = resposta2 == 's';
+  print(estaFrio ? 'Vixi' : 'Ah baum');
 }
