@@ -17,7 +17,7 @@ main() {
 
   bool ehFragil = true;
   bool ehCaro = false;
-
+  
   print(ehFragil && ehCaro);
   print(ehCaro || ehFragil);
   print(ehFragil ^ ehCaro); // OU exclusivo apenas 1 pode ser verdadeiro
@@ -29,4 +29,11 @@ main() {
   print(3 != 2);
   print(2 >= 4);
   print(2 <= 4);
+
+  int c = 1;
+  c++;
+  c--;
+  print(c);
+  print(!false);
+  print(!true);
 }
