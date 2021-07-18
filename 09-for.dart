@@ -15,4 +15,18 @@ main() {
   for (double nota in notas) {
     print(nota);
   }
+
+  Map<String, double> notas_alunos = {
+    "Joao": 2.0,
+    "Paulo": 10.0,
+    "Marcos": 7.9
+  };
+
+  for (String nome in notas_alunos.keys) {
+    print("$nome: ${notas_alunos[nome]}");
+  }
+
+  for (var registro in notas_alunos.entries) {
+    print("${registro.key}: ${registro.value}");
+  }
 }
