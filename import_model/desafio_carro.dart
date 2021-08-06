@@ -7,8 +7,8 @@ class Carro {
   }
 
   void set velocidadeAtual(novaVelocidade) {
-    bool diferenca = (velocidadeAtual - novaVelocidade).abs() != 5;
-    bool maximo = novaVelocidade > velocidadeMaxima;
+    bool diferenca = (_velocidadeAtual - novaVelocidade).abs() != 5;
+    bool maximo = (_velocidadeAtual + novaVelocidade) > velocidadeMaxima;
     if (estaParado() || estaNoLimite() || diferenca || maximo) return;
     _velocidadeAtual = novaVelocidade;
   }
